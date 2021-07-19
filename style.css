@@ -1,0 +1,105 @@
+@import url('https://fonts.googleapis.com/css2?family=Spartan:wght@400;500;700&display=swap');
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Spartan', sans-serif;
+}
+
+
+/***** INTRO STYLING *****/
+
+.intro{
+    color: hsl(300, 43%, 22%);
+    text-align: center;
+    padding-top: 10px;
+    font-size: 15px;
+}
+
+/***** REVIEWS STYLING *****/
+
+.reviews{
+    list-style: none;
+}
+.list1, .list2, .list3{
+    background-color: hsl(300, 24%, 96%);
+    margin: 10px 20px;
+    padding: 10px;
+    text-align: center;
+    border-radius: 10px;
+}
+.stars{
+    display: block;
+    color: hsl(300, 43%, 22%);
+    font-size: 14px;
+    font-weight: bold;
+}
+@media (min-width: 765px){
+    #container{
+        display: flex;
+        justify-content: space-evenly;
+        margin: 20px 0;
+    }
+    .list1, .list2, .list3{
+        text-align: start;
+        width: 100%;
+    }
+    .list2{
+        width: 100%;
+    }
+    .list3{
+        width: 100%;
+    }
+    .intro{
+        text-align: justify;
+        width: 40%;
+    }
+    .stars{
+        display: inline;
+        font-size: 12px;
+        padding-left: 10px;
+    }
+}
+
+
+/***** BUYERS STYLING *****/
+
+#container1{
+    margin-top: 50px;
+}
+.buyer{
+    background-color: hsl(300, 43%, 22%);
+    margin: 10px 20px;
+    padding: 30px;
+    border-radius: 10px;
+    color: hsl(0, 0%, 100%);
+    font-size: 12px;
+}
+.head{
+    display: grid;
+    grid-template-columns: 40px auto;
+}
+.img{
+    width: 30px;
+    border-radius: 50px;
+}
+span{
+    line-height: 17px;
+}
+.testimony{
+    padding-top: 10px;
+}
+.status{
+    color: hsl(333, 80%, 67%);
+}
+@media (min-width: 765px){
+    #container1{
+        display: grid;
+        grid-template-columns: auto auto auto;
+        margin: 50px 10%;
+    }
+    .buyer{
+        padding: 15px;
+    }
+}
